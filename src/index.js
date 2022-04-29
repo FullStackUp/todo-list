@@ -16,7 +16,7 @@ addEventListener("submit", (event) => {
 
 const todos = [
   {
-    text: "I'am a todo",
+    text: "I am a todo",
     done: false,
     editMode: true,
   },

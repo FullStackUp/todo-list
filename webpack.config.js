@@ -17,13 +17,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js/,
         //take all files js except node_modules
+        test: /\.js/,
         exclude: /(node_modules)/,
         use: ["babel-loader"],
       },
       {
         test: /\.css$/i,
+        //starts from right to left, the order is important
         use: ["style-loader", "css-loader"],
       },
     ],
